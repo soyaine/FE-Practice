@@ -1,6 +1,71 @@
 b {
     color: chartreuse;
-    text-decoration: underline;}
+    text-decoration: underline;
+}
 
 p {
     color: darkslateblue;}
+
+body {
+    min-width: 450px;
+    max-width: 650px;
+    background-color: #d3d3d3;
+    margin: 20px auto 20px auto;
+}
+
+div {
+    padding: 20px;
+}
+.chapter {
+    background-color: #ffffff;
+    margin: 20px auto 20px auto;
+    -moz-box-shadow: 5px 5px 4px #777777;
+    -webkit-box-shadow: 5px 5px 4px #777777;
+    box-shadow: 5px 5px 4px #777777;
+}
+.picture {
+    text-align: center;
+    align-content: center;
+    border-width: .5em;
+    border-color: #777777;
+    border: groove;
+    margin-bottom: 20px;
+    padding: 2px;
+}
+.tablehead {
+    background-color: black;
+    color: white;
+}
+.tablefoot {
+    background-color: lightgrey;
+}
+.sidebar {
+    border-left-color: #777777;
+    border-left: groove;
+}
+.note {
+    font-size: small;
+    color: #777777;
+}
+.submit {
+    height: inherit;
+    width: 90%;
+    margin: auto auto;
+    text-align: center;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+}
+table{
+    padding: 2px;
+    margin: auto auto;
+    border-spacing: 2px 2px;
+    border-width: 2px;
+}
+tr>td {
+    text-align: right;
+}
+#note {
+    background-color: rgba(0,0,0,0.02); //第 4 位表示 alphavalue
+    box-shadow: 3px 3px red, -1em 0 0.4em olive;
+}
