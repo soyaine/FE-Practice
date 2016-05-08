@@ -15,7 +15,8 @@ body {
     border-color: #999;
     padding: 20px;
     position: relative;
-    overflow: auto;
+    overflow: scroll;
+    width: 100%;
 }
 .logo {
     width: 200px;
@@ -53,30 +54,32 @@ body {
     padding: 20px;
     position: relative;
     overflow: auto;
+    width: 100%;
     margin-top: 50px;
 }
 .logo- {
-    width: 200px;
+    width: 25%;
     float: left;
     left: 20px;
     top: 20px;
     border: 1px solid blue;
 }
 .content- {
-    width: auto;
-
-    margin-left: 220px;
-    margin-right: 140px;
+    width: 60%;
+    float: left;
+    clear: none;
+    margin-left: 20px;
     border: 1px solid black;
 }
 .sidebar- {
-    width: 120px;
+    width: 10%;
     float: right;
-    right: 20px;
-    top: 20px;
     border: 1px solid red;
+    clear: none;
+    overflow: auto;
 }
 .pic {
     width: 80px;
     height: 80px;
+    float: left;
 }
