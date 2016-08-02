@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Practice</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <style>
+      .btn{
+       	margin: 10px;
+      }
+	  .container {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	  }
+    </style>
+
+    <div class="container">
+            <button type="button" class="btn btn-default"><a href="draw_monkey.html">原生 CSS 绘制动漫猴</a></button></br>
+        
+  
+    </div><!-- /.container -->
+
+    <!-- jQuery (necessay for Bootstrap's JavaScript plugins) -->
+    <script type="javascript" src="dist/js/vendor/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="javascript" src="dist/js/vendor/bootstrap.min.js"></script>
+    <script type="javascript" src="dist/js/flat-ui.js"></script>
+    <script src="docs/assets/js/application.js"></script>
+</body>
+</html>
