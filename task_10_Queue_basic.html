@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>队列操作</title>
+</head>
+<style>
+    .queue-view {
+        position: relative;
+        width: 780px;
+        height: 300px;
+        border-bottom: solid #000;
+    }
+    .queue-cell {
+        width: 10px;
+        position: absolute;
+        background-color: #004d4d;
+        bottom: 0%;
+    }
+    .queue-target {
+        width: 10px;
+        position: absolute;
+        background-color: #00cccc;
+        bottom: 0%;
+    }
+</style>
+<body>
+<div style="visibility: hidden; position: absolute;">
+    <ul>
+        <li>思路说明：</li>
+        <ol>
+            <li> 随机生成1-100的数字60个</li>
+            <li> 用高度表示大小，以队列的形式展现元素</li>
+            <li> 实现简单排序功能，用可视化的方式表示</li>
+        </ol>
+        <li>任务注意事项：</li>
+        <ol>
+            <li> 实现简单功能的同时，请仔细学习JavaScript基本语法、事件、DOM相关的知识</li>
+            <li> 请注意代码风格的整齐、优雅 </li>
+            <li> 代码中含有必要的注释</li>
+        </ol>
+        <li>验收标准：笔记记录, 效果实现</li>
+        <li>完成验收：笔记 ，设计稿效果达成——在上面任务注意事项里面打钩</li>
+    </ul>
+</div>
+<nav>
+    <label>比较次数</label>
+    <label id="compare-time">0</label>
+    <input id="queue-input">
+    <button id="left-in">左侧入</button>
+    <button id="right-in">右侧入</button>
+    <button id="left-out">左侧出</button>
+    <button id="right-out">右侧出</button>
+    <button id="start">开始</button>
+
+</nav>
+<div class="queue-view" id="queue-view">
+    <!--<div class="queue-cell"></div>-->
+</div>
+</body>
+<script src="task_10_Queue_basic.js"></script>
+</html>

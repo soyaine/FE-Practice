@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "x-ua-compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Practice</title>
+
+    <!-- Loading Bootstrap -->
+    <link href="../../dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="../../dist/css/flat-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../../dist/img/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="../../dist/js/vendor/html5shiv.js"></script>
+      <script src="../../dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <h1>world</h1>
+    <input type="checkbox" data-on-color="red" data-toggle="switch">
+    <button class="btn btn-hg btn-primary">
+        dkj <span class="btn-tip">hd</span>button
+    </button>
+    <button class="btn btn-default btn-group">fdsfasf</button>
+
+    <input type="checkbox"><label>checkbox</label>
+
+    <div class="tagsinput-primary">
+        <input name="tagsinput" class="tagsinput" data-role="tagsinput" value="School, Teacher, Colleague" />
+    </div>
+
+    <div class="container">
+        <div>
+            <label><input type="checkbox" checked data-toggle="switch" id="custom-switch-011" />jfkldsj </label>
+            <input type="checkbox" checked data-toggle="switch" name="default-switch" id="switch-01" />
+        </div>
+
+    </div>
+
+    <div class="row pbl">
+        <div class="col-md-2">
+            <input type="checkbox" checked data-toggle="switch" id="custom-switch-01" />
+        </div>
+        <div class="col-md-2">
+            <input type="checkbox" data-toggle="switch" id="custom-switch-02" />
+        </div>
+        <div class="col-md-2">
+            <div class="bootstrap-switch-square">
+                <input type="checkbox" checked data-toggle="switch" id="custom-switch-03" data-on-text="<span class='fui-check'></span>" data-off-text="<span class='fui-cross'></span>" />
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="bootstrap-switch-square">
+                <input type="checkbox" data-toggle="switch" id="custom-switch-04" />
+            </div>
+        </div>
+        <div class="col-md-2">
+            <input type="checkbox" checked disabled data-toggle="switch" id="custom-switch-10" />
+        </div>
+        <div class="col-md-2">
+            <div class="bootstrap-switch-square">
+                <input type="checkbox" checked disabled data-toggle="switch" id="custom-switch-11" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row pbl">
+            <div class="col-md-2">
+                <input type="checkbox" checked data-toggle="switch" id="custom-switch-012" />
+            </div>
+        </div>
+    </div><!-- /.container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../dist/js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="../assets/js/application.js"></script>
+</body>
+</html>
