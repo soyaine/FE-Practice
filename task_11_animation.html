@@ -6,13 +6,22 @@
 </head>
 <style>
     .spot {
-        width: 100px;
-        height: 100px;
+        width: 10px;
+        height: 10px;
         background-color: #00a1cb;
+    }
+    canvas {
+        background: black;
+    }
+    body {
+        overflow: hidden;
     }
 </style>
 <body>
 <div id="animation" class="spot"></div>
+<div id="anim" class="spot">点击运行动画</div>
+<canvas id="path" width="500px" height="200px">this is a path practice</canvas>
+<canvas id="canvas"></canvas>
 </body>
 <script type="text/javascript" src="task_11_animation.js"></script>
 </html>
