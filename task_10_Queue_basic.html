@@ -5,6 +5,41 @@
     <title>队列操作</title>
 </head>
 <style>
+    * {
+        font-family: "Microsoft YaHei UI";
+    }
+    #nav button {
+        width: auto;
+        height: 30px;
+        margin: 3px 1px;
+        background-color: #bfd4d9;
+        border-radius: 5px;
+    }
+    #nav button:hover {
+        /*border: 2px #000 solid;*/
+    }
+    #legend {
+        position: absolute;
+        margin-top: 30px;
+        width: 300px;
+    }
+    #legend div:first-child {
+        margin: 10px 0;
+    }
+    .legend-cell:after {
+        content: "—"attr(content);
+        display: block;
+        position: absolute;
+        left: 55px;
+        font-size: 10px;
+    }
+    .legend-cell {
+        width: 50px;
+        height: 10px;
+        background-color: #004d4d;
+        border: solid 1px;
+        margin-bottom: 6px;
+    }
     .queue-view {
         position: relative;
         width: 780px;
@@ -13,15 +48,47 @@
     }
     .queue-cell {
         width: 10px;
+        height: 8px;
         position: absolute;
         background-color: #004d4d;
-        bottom: 0%;
+        bottom: -1px;
+        border: solid 1px;
+        /*-webkit-transition: background 25ms linear 25ms;*/
+        /*-moz-transition: background 25ms linear 25ms;*/
+        /*-ms-transition: background 25ms linear 25ms;*/
+        /*-o-transition: background 25ms linear 25ms;*/
+        /*transition: background 25ms linear 25ms;*/
     }
-    .queue-target {
-        width: 10px;
-        position: absolute;
+    /*当前比较的数字*/
+    .on{
         background-color: #00cccc;
-        bottom: 0%;
+    }
+    /*选择排序中当前被选中的*/
+    .select {
+        background-color: transparent;
+    }
+    .queue-cell.select {
+        bottom: 5px;
+    }
+    /*选择排序中的最小值*/
+    .min{
+        background-color: #00cccc;
+        border-color: #f00;
+    }
+    /*显示柱状图数字标记*/
+    .queue-cell.min:after, .queue-cell.sort:after, .queue-cell.on:after, .queue-cell.select:after{
+        display: block;
+        content: attr(title);
+        font-size: 10px;
+        color: inherit;
+        transform: translateY(-19px);
+    }
+    .min:after {
+        color: #f00;
+    }
+    /*排序完成的*/
+    .sort {
+        background-color: #f2dede;
     }
 </style>
 <body>
@@ -43,20 +110,37 @@
         <li>完成验收：笔记 ，设计稿效果达成——在上面任务注意事项里面打钩</li>
     </ul>
 </div>
-<nav>
+<nav id="nav">
     <label>比较次数</label>
-    <label id="compare-time">0</label>
-    <input id="queue-input">
-    <button id="left-in">左侧入</button>
-    <button id="right-in">右侧入</button>
-    <button id="left-out">左侧出</button>
-    <button id="right-out">右侧出</button>
-    <button id="start">开始</button>
+    <label id="compare-time">0</label><br>
+    <label for="data-range">数量</label>
+    <input id="data-range" type="range" min="10" max="100" step="10" value="10"><span id="data-range-span">10</span><br>
+    <!--<label for="queue-input">数据数</label>-->
+    <!--<input id="queue-input"><br>-->
+
+    <label for="speed-range">每帧时间间隔(ms)</label>
+    <input id="speed-range" type="range" min="10" max="200" step="10" value="10"><span id="speed-range-span">10</span><br><br>
+    <!--<button id="left-in">左侧入</button>-->
+    <!--<button id="right-in">右侧入</button>-->
+    <!--<button id="left-out">左侧出</button>-->
+    <!--<button id="right-out">右侧出</button><br>-->
+    <button id="reset">重置数据</button><br>
+    <button id="startBubbleSort">开始冒泡排序</button>
+    <button id="startSelectionSort">开始选择排序</button><br>
 
 </nav>
+<div id="legend">
+    <div>图例</div>
+    <div class="legend-cell selectSort bubbleSort"  content="普通数"></div>
+    <div class="legend-cell selectSort select" content="每轮循环被选中的数"></div>
+    <div class="legend-cell selectSort min" content="此轮循环中的最小值"></div>
+    <div class="legend-cell selectSort bubbleSort on" content="当前比较的值"></div>
+    <div class="legend-cell selectSort sort" content="完成排序的值"></div>
+</div>
 <div class="queue-view" id="queue-view">
     <!--<div class="queue-cell"></div>-->
 </div>
 </body>
 <script src="task_10_Queue_basic.js"></script>
+<script src="task_10_Queue_selectionSort.js"></script>
 </html>
