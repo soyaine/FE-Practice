@@ -40,6 +40,7 @@ setTimeout (function(){
     if (divLeftNum < 500){
         setTimeout(arguments.callee, 50);
     }
+<<<<<<< HEAD
 }, 50);
 
 
@@ -2395,3 +2396,6 @@ var schedule = (function (self) {
 
 
 
+=======
+}, 50);
+>>>>>>> refs/remotes/origin/master
