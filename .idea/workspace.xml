@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96ca4953-f6bb-4e64-a1c7-a51be4b8e077" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/canva_practice.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/canvas_practice.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery_practice.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery_practice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Random-quote-machine.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice_demo.js" afterPath="$PROJECT_DIR$/practice_demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task_11_animation.html" afterPath="$PROJECT_DIR$/task_11_animation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task_11_animation.js" afterPath="$PROJECT_DIR$/task_11_animation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Random-quotes.html" afterPath="$PROJECT_DIR$/Random-quotes.html" />
     </list>
     <ignored path="IFE-Practice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,6 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -29,53 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-      <file leaf-file-name="task_9_JS_chart.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_9_JS_chart.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="task_11_animation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_11_animation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="task_11_animation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task_11_animation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4994">
+            <state vertical-scroll-proportion="0.0">
               <caret line="227" column="50" selection-start-line="227" selection-start-column="50" selection-end-line="227" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="practice_demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice_demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="practice_demo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice_demo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -84,7 +38,7 @@
       <file leaf-file-name="canvas_practice.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/canvas_practice.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state vertical-scroll-proportion="-8.043478">
               <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding />
             </state>
@@ -94,7 +48,7 @@
       <file leaf-file-name="canva_practice.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/canva_practice.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state vertical-scroll-proportion="0.0">
               <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc;n#draw#0" expanded="false" />
@@ -106,21 +60,41 @@
       <file leaf-file-name="jquery_practice.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jquery_practice.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state vertical-scroll-proportion="-9.652174">
               <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery_practice.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jquery_practice.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jquery_practice.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state vertical-scroll-proportion="0.0">
               <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
               <folding>
                 <element signature="e#0#46#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Random-quotes.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Random-quotes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.87529135">
+              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Random-quote-machine.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Random-quote-machine.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,8 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/task_2_CSS.html" />
-        <option value="$PROJECT_DIR$/task_3_layout.css" />
         <option value="$PROJECT_DIR$/task_3_layout.html" />
         <option value="$PROJECT_DIR$/task_4_positon.html" />
         <option value="$PROJECT_DIR$/task_4_positon.css" />
@@ -175,17 +147,13 @@
         <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/third_party/port.js" />
         <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/js/common/Browser.js" />
         <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/frame_loader.js" />
-        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/ClipResultCoordinator.js" />
-        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/ContentVeil.js" />
         <option value="$PROJECT_DIR$/task_7_JS_basic.html" />
         <option value="$PROJECT_DIR$/task_9_JS_chart.html" />
         <option value="$PROJECT_DIR$/task_9_JS_chart.js" />
         <option value="$PROJECT_DIR$/task_10_Queue_basic.html" />
         <option value="$PROJECT_DIR$/practice_demo.html" />
         <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/skitch/js/skitch.js" />
-        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/third_party/require/require.js" />
         <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/evernote.js" />
-        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/third_party/jquery-1.12.3.min.js" />
         <option value="$PROJECT_DIR$/task_10_Queue_basic.js" />
         <option value="$PROJECT_DIR$/practice_demo.js" />
         <option value="$PROJECT_DIR$/canvas_practice.html" />
@@ -197,19 +165,25 @@
         <option value="$USER_HOME$/Desktop/index.html" />
         <option value="$PROJECT_DIR$/jquery_practice.html" />
         <option value="$PROJECT_DIR$/jquery_practice.js" />
+        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/third_party/jquery-1.12.3.min.js" />
+        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/third_party/require/require.js" />
+        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/ClipResultCoordinator.js" />
+        <option value="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/ContentVeil.js" />
+        <option value="$PROJECT_DIR$/Random-quote-machine.js" />
+        <option value="$PROJECT_DIR$/Random-quotes.html" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="800" />
-    <option name="width" value="800" />
-    <option name="height" value="900" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2184" />
+    <option name="height" value="1464" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -244,7 +218,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -257,7 +231,30 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IFE-Practice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IFE-Practice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IFE-Practice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_624c8416ee51e205b3f892d1d904e06e6f3c57c8/cmd/git.exe" />
@@ -275,11 +272,8 @@
       <recent name="C:\Users\test\Documents\GitHub\IFE-Practice" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.jquery_practice.html">
+  <component name="RunManager" selected="JavaScript Debug.Random-quotes.html">
     <configuration default="false" name="task_10_Queue_basic.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IFE-Practice/task_10_Queue_basic.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="practice_demo.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IFE-Practice/practice_demo.html">
       <method />
     </configuration>
     <configuration default="false" name="task_11_animation.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IFE-Practice/task_11_animation.html">
@@ -291,15 +285,16 @@
     <configuration default="false" name="jquery_practice.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IFE-Practice/jquery_practice.html">
       <method />
     </configuration>
+    <configuration default="false" name="Random-quotes.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IFE-Practice/Random-quotes.html">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
-      <config-file value="" />
-      <node-interpreter value="project" />
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
       <envs />
       <method />
     </configuration>
@@ -316,7 +311,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -327,12 +321,10 @@
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
-      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter />
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
@@ -346,24 +338,22 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.task_10_Queue_basic.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.practice_demo.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.task_11_animation.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.canvas_practice.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.jquery_practice.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.task_11_animation.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.canvas_practice.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.jquery_practice.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Random-quotes.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.jquery_practice.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.task_11_animation.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.canvas_practice.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.task_10_Queue_basic.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.practice_demo.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Random-quotes.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.jquery_practice.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.task_11_animation.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.canvas_practice.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.task_10_Queue_basic.html" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="false" />
     <option name="ACTIVE_ACTIONS" value=",HIDE_INHERITED_FROM_OBJECT,HIDE_INHERITED" />
@@ -376,7 +366,6 @@
       <changelist id="96ca4953-f6bb-4e64-a1c7-a51be4b8e077" name="Default" comment="" />
       <created>1462110773379</created>
       <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
       <updated>1462110773379</updated>
       <workItem from="1470639956933" duration="5461000" />
       <workItem from="1470704557834" duration="20716000" />
@@ -398,25 +387,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="800" y="0" width="800" height="900" extended-state="0" />
-    <editor active="false" />
+    <frame x="-12" y="-12" width="2184" height="1464" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3494898" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34934086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865855" sideWeight="0.4975728" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4500632" sideWeight="0.5150659" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865855" sideWeight="0.4975728" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14500941" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865855" sideWeight="0.4975728" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13466334" sideWeight="0.4849341" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4347826" sideWeight="0.4849341" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -513,11 +502,25 @@
           <line>14</line>
           <option name="timeStamp" value="185" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Random-quote-machine.js</url>
+          <line>30</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Random-quote-machine.js</url>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Random-quote-machine.js</url>
+          <line>40</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="186" />
+      <option name="time" value="200" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -529,230 +532,241 @@
         <watch expression="this" />
         <watch expression="div.style" language="JavaScript" />
         <watch expression="div.style.height" language="JavaScript" />
+        <watch expression="&quot;hsl(&quot;+(Math.random() * 360)" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jquery_practice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task_1_HTML.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_2_CSS.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="204" column="18" selection-start-line="204" selection-start-column="18" selection-end-line="204" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_2_CSS.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_1_HTML.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_2_CSS.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_2_CSS.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_1_HTML.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_2_CSS.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_1_HTML.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_2_CSS.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_1_HTML.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_2_CSS.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_1_HTML.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_2_CSS.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Draw.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Draw.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="297" column="14" selection-start-line="297" selection-start-column="14" selection-end-line="297" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_2_CSS.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="281" column="65" selection-start-line="281" selection-start-column="65" selection-end-line="281" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/draw_monkey.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/draw_monkey.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="164" column="14" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap_Practice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_4_positon.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_4_positon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_3_layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_3_layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_5_HTML&amp;CSS.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_5_HTML&amp;CSS.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMTraversalAndRange.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_6_newspaper.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="462" column="0" selection-start-line="462" selection-start-column="0" selection-end-line="462" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap_Practice.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_8_JS_middle.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_8_JS_middle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
           <folding />
         </state>
@@ -760,7 +774,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task_7_JS_basic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -770,21 +784,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task_6_newspaper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="603" column="16" selection-start-line="603" selection-start-column="16" selection-end-line="603" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_10_Queue_basic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
@@ -792,7 +806,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task_10_Queue_basic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3124">
+        <state vertical-scroll-proportion="0.0">
           <caret line="142" column="53" selection-start-line="142" selection-start-column="53" selection-end-line="142" selection-end-column="53" />
           <folding />
         </state>
@@ -800,17 +814,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task_9_JS_chart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_9_JS_chart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state vertical-scroll-proportion="0.0">
           <caret line="239" column="15" selection-start-line="239" selection-start-column="15" selection-end-line="239" selection-end-column="15" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
@@ -818,66 +832,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:////192.168.95.59/app/test.html" />
     <entry file="file://$PROJECT_DIR$/task_11_animation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice_demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practice_demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_practice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="158" column="29" selection-start-line="158" selection-start-column="29" selection-end-line="158" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task_11_animation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4994">
+        <state vertical-scroll-proportion="0.0">
           <caret line="227" column="50" selection-start-line="227" selection-start-column="50" selection-end-line="227" selection-end-column="50" />
           <folding />
         </state>
@@ -885,7 +858,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/canva_practice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc;n#draw#0" expanded="false" />
@@ -893,21 +866,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jquery_practice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jquery_practice.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state vertical-scroll-proportion="-9.652174">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jquery_practice.js">
+    <entry file="file://$PROJECT_DIR$/canvas_practice.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#46#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-8.043478">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice_demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.043478">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poet.song.10000.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Random-quote-machine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Random-quotes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87529135">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

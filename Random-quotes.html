@@ -3,18 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Random Quote Machine</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 </head>
 <style>
     * {
         font-size: large;
         font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    }
-    .bgcolor {
-        background-color: rgba(255, 123, 123, .7);
-    }
-    .ftcolor {
-        color: rgba(12, 123, 123, .7);
     }
     body {
         position: relative;
@@ -37,7 +31,7 @@
         display: block;
         position: absolute;
         color: #fff;
-        font-size: x-small;
+        font-size: small;
         font-weight: lighter;
         bottom: -30px;
         left: 50%;
@@ -90,12 +84,28 @@
         right: 70px;
     }
 </style>
-<body class="bgcolor">
+<style id="colorStyle">
+    #quote-share:hover, #quote-next:hover {
+        background-color: hsl(123, 30%,65%);
+        /*transition: .5s background-color;*/
+    }
+    .bgcolor {
+        background-color: hsl(123, 30%,80%);
+        transition: 1s background-color;
+        background-blend-mode: luminosity;
+    }
+    .ftcolor {
+        color: hsl(123, 30%,65%);
+        transition: 1s color;
+    }
+</style>
+<body class="bgcolor" id="bg">
 <div id="quote-view">
-    <div class="ftcolor" id="quote-content" author="songyt">Tadfdfasdfadsffhis is a new day</div>
+    <div class="ftcolor" id="quote-content" author="soyaine">This is my demo of random song machine</div>
     <!--<div class="ftcolor" id="quote-author">Soyaine</div>-->
-    <div class="bgcolor" id="quote-share" title="分享到微博"><i class="fa fa-weibo"></i></div>
-    <div class="bgcolor" id="quote-next">New quote</div>
+    <div class="bgcolor hovercolor" id="quote-share" title="分享到微博"><i class="fa fa-weibo"></i></div>
+    <div class="bgcolor hovercolor" id="quote-next">New quote</div>
 </div>
 </body>
+<script src="Random-quote-machine.js"></script>
 </html>
