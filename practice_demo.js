@@ -41,6 +41,7 @@ setTimeout (function(){
         setTimeout(arguments.callee, 50);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }, 50);
 
 
@@ -2396,6 +2397,9 @@ var schedule = (function (self) {
 
 
 
+=======
+}, 50);
+>>>>>>> refs/remotes/origin/master
 =======
 }, 50);
 >>>>>>> refs/remotes/origin/master
