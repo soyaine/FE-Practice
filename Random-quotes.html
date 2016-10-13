@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Quote Machine</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+</head>
+<style>
+    * {
+        font-size: large;
+        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+    .bgcolor {
+        background-color: rgba(255, 123, 123, .7);
+    }
+    .ftcolor {
+        color: rgba(12, 123, 123, .7);
+    }
+    body {
+        position: relative;
+        width: 100%;
+    }
+    #quote-view {
+        position: absolute;
+        width: 500px;
+        height: 200px;
+        margin-top: 100px;
+        padding: 50px 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        border-radius: 7px;
+    }
+    #quote-view:after {
+        content: "by soyaine";
+        font-family: "Lobster", "Monospace", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-size: x-small;
+        font-weight: lighter;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #quote-content {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: larger;
+    }
+    #quote-content:before, #quote-content:after {
+        display: block;
+        position: absolute;
+    }
+    /*引号*/
+    #quote-content:before {
+        content: "“";
+        font-size: 3em;
+        font-weight: bolder;
+        left: -.6em;
+        top: -.15em
+    }
+    #quote-content:after {
+        content: "- " attr(author);
+        font-size: medium;
+        left: 100%;
+        margin-top: 25px;
+        width: 100px;
+    }
+    #quote-author {
+
+    }
+    #quote-share, #quote-next {
+        position: absolute;
+        bottom: 50px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+    #quote-share:hover, #quote-next:hover {
+        cursor: pointer;
+    }
+    #quote-share {
+        font-family: icon;
+        left: 70px;
+    }
+    #quote-next {
+        right: 70px;
+    }
+</style>
+<body class="bgcolor">
+<div id="quote-view">
+    <div class="ftcolor" id="quote-content" author="songyt">Tadfdfasdfadsffhis is a new day</div>
+    <!--<div class="ftcolor" id="quote-author">Soyaine</div>-->
+    <div class="bgcolor" id="quote-share" title="分享到微博"><i class="fa fa-weibo"></i></div>
+    <div class="bgcolor" id="quote-next">New quote</div>
+</div>
+</body>
+</html>
