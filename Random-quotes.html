@@ -8,7 +8,7 @@
 <style>
     * {
         font-size: large;
-        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-family: 方正清刻本悦宋简体, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     }
     body {
         position: relative;
@@ -16,7 +16,7 @@
     }
     #quote-view {
         position: absolute;
-        width: 500px;
+        width: 700px;
         height: 200px;
         margin-top: 100px;
         padding: 50px 90px;
@@ -42,6 +42,8 @@
         left: 50%;
         transform: translateX(-50%);
         font-size: larger;
+        /*font-family: ;*/
+        transition: 1s innerText;
     }
     #quote-content:before, #quote-content:after {
         display: block;
@@ -52,6 +54,7 @@
         content: "“";
         font-size: 3em;
         font-weight: bolder;
+        font-family: "Lobster", "Monospace", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         left: -.6em;
         top: -.15em
     }
@@ -87,7 +90,7 @@
 <style id="colorStyle">
     #quote-share:hover, #quote-next:hover {
         background-color: hsl(123, 30%,65%);
-        /*transition: .5s background-color;*/
+        transition: .5s background-color;
     }
     .bgcolor {
         background-color: hsl(123, 30%,80%);
@@ -101,10 +104,10 @@
 </style>
 <body class="bgcolor" id="bg">
 <div id="quote-view">
-    <div class="ftcolor" id="quote-content" author="soyaine">This is my demo of random song machine</div>
+    <div class="ftcolor" id="quote-content" author="soyaine">点击按钮，邂逅一句诗的意境</div>
     <!--<div class="ftcolor" id="quote-author">Soyaine</div>-->
     <div class="bgcolor hovercolor" id="quote-share" title="分享到微博"><i class="fa fa-weibo"></i></div>
-    <div class="bgcolor hovercolor" id="quote-next">New quote</div>
+    <div class="bgcolor hovercolor" id="quote-next">邂逅</div>
 </div>
 </body>
 <script src="Random-quote-machine.js"></script>
