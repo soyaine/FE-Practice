@@ -6,20 +6,32 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 </head>
 <style>
+    /*@media screen and (max-device-width: 500px){*/
+        /*#quote-view {*/
+            /*width: 200px;*/
+            /*height: 500px;*/
+        /*}*/
+    /*}*/
+    /*@media screen and (min-device-width: 501px) {*/
+        /*#quote-view {*/
+            /*width: 500px;*/
+            /*height: 200px;*/
+        /*}*/
+    /*}*/
     * {
         font-size: large;
         font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     }
     body {
-        position: relative;
+        /*position: relative;*/
         width: 100%;
     }
     #quote-view {
         position: absolute;
-        width: 500px;
-        height: 200px;
+        width: 80%;
+        height: 60%;
         margin-top: 100px;
-        padding: 50px 90px;
+        /*padding: 50px 90px;*/
         left: 50%;
         transform: translateX(-50%);
         background-color: #fff;
@@ -40,6 +52,7 @@
     #quote-content {
         position: absolute;
         left: 50%;
+        top: 30%;
         transform: translateX(-50%);
         font-size: larger;
     }
