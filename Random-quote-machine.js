@@ -17,6 +17,14 @@ function getRandomSong(song){
         if(randomSong.hasOwnProperty("paragraphs")){
             var quoteContent = document.getElementById("quote-content");
             var randomLine = randomSong.paragraphs[Math.floor( (Math.random() * randomSong.paragraphs.length) )];
+            // 窄屏幕将诗句换行
+            var viewHeight = quoteContent.offsetParent.clientHeight;
+            var viewWidth = quoteContent.offsetParent.clientWidth;
+            var width = document.body.clientWidth;
+            var height = document.body.clientHeight;
+            if( (viewWidth < 1140 && viewWidth/viewHeight > 1) || (viewHeight < 670 && viewWidth/viewHeight < 1) ){
+                randomLine = randomLine.replace(/，/g, "，\n");
+            }
             quoteContent.innerText = randomLine;
             quoteContent.attributes[2].value = randomSong.author;
         }
