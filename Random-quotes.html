@@ -31,11 +31,13 @@
             min-height: 510px;
         }
         #quote-content {
+            -ms-writing-mode: tb-rl;
+            -webkit-writing-mode: vertical-rl;
             writing-mode: vertical-rl;
             top: 10%;
         }
         #quote-content:after {
-            
+            -ms-writing-mode: tb-rl;
             -webkit-writing-mode: vertical-rl;
             writing-mode: vertical-rl;
             bottom: -25px;
@@ -57,6 +59,18 @@
         }
         #quote-content:before {
             content: "“";
+        }
+    }
+    /*移动端*/
+    @media screen and (max-width: 500px) {
+        #quote-content {
+            font-size: 3rem;
+        }
+    }
+    /*Web端*/
+    @media screen and (min-width: 500px) {
+        #quote-content {
+            font-size: 2rem;
         }
     }
     * {
@@ -96,10 +110,8 @@
         left: 50%;
         /*top: 30%;*/
         transform: translateX(-50%);
-        font-size: 2rem;
         /*font-family: ;*/
-        transition: 1s innerText;
-        transition: 1s color;
+        transition: 1s innerText, 1s color;
     }
     #quote-content:before, #quote-content:after {
         display: block;
