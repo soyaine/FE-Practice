@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+//    var line;
+//    while(line = read_line()){
+//        line = line.split(' ');
+//        print(compare(line[0], line[1]));
+//    }
+
+function getNext(num){
+    // 加1，并转化为数组
+    num = (++num).toString().split('');
+    var len = num.length;
+    var right = Math.ceil(len/2);
+    // 以中间位置为对称轴
+    // 从中间位置靠右的数字开始比较左右大小
+    while( right < len ){
+        var left = len - right - 1;
+        if(num[left] != num[right]){
+            if (num[left] < num[right]){
+                ++num[left];
+                break;
+            }else break;
+        }
+        right++;
+    }
+    //构建对称数
+    for( var i= 0; i < Math.floor(len/2); i++){
+        num[len - i - 1] = num[i];
+    }
+    return num.join('');
+}
+
+//    getNext("444445");
+
+    function getNum(num){
+        num = (++num).toString();
+        var len = num.length;
+        var index = Math.ceil(len/2);
+        var left = num.substr(0, len - index).split('');
+        var right = num.substr(index, len - index).split('');
+        left = left.reverse();
+        var i = 0;
+        while (left.join('') < right.join('') && i < index - 1){
+            left[i]++;
+            i++;
+        }
+        right = left.reverse();
+        var result = left.concat(right).join('');
+        return result;
+    }
+
+    getNum("444445");
+
+</script>
+</html>
