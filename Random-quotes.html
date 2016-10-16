@@ -64,19 +64,24 @@
         }
     }
     /*移动端*/
-    @media screen and (max-width: 500px) {
-        #quote-content {
-            font-size: 3rem;
+    @media screen and (max-device-width: 500px) {
+        * {
+            font-size: 1.7rem;
+        }
+        #quote-view {
+            height: 71.8%;
         }
     }
     /*Web端*/
-    @media screen and (min-width: 500px) {
-        #quote-content {
-            font-size: 2rem;
+    @media screen and (min-device-width: 500px) {
+        * {
+            font-size: 1.4rem;
+        }
+        #quote-view {
+            height: 48.1%;
         }
     }
     * {
-        font-size: 1rem;
         font-family: "fzqingkebenyuesong", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     }
     body {
@@ -87,7 +92,7 @@
         box-sizing: border-box;
         position: absolute;
         width: 61.8%;
-        height: 71.8%;
+        /*height: 71.8%;*/
         margin: 6.18% 0;
         left: 50%;
         top: 8.18%;
@@ -128,9 +133,10 @@
         left: -.6em;
         top: -.15em
     }
+    /*作者*/
     #quote-content:after {
         content: "- " attr(author);
-        font-size: .8rem;
+        font-size: .7em;
         /*left: 100%;*/
         margin-top: 25px;
         width: 100px;
@@ -156,21 +162,6 @@
     #quote-next {
         right: 70px;
     }
-</style>
-<style id="colorStyle">
-    #quote-share:hover, #quote-next:hover {
-        background-color: hsl(123, 30%,65%);
-        transition: .5s background-color;
-    }
-    .bgcolor {
-        background-color: hsl(123, 30%,80%);
-        transition: 1s background-color;
-        background-blend-mode: luminosity;
-    }
-    .ftcolor {
-        color: hsl(123, 30%,65%);
-        transition: 1s color;
-    }
     header, footer, footer a{
         color: #fff;
         text-align: center;
@@ -189,7 +180,22 @@
         display: block;
         position: absolute;
         width: 100%;
-        bottom: -50px;
+        bottom: -3rem;
+    }
+</style>
+<style id="colorStyle">
+    #quote-share:hover, #quote-next:hover {
+        background-color: hsl(123, 30%,65%);
+        transition: .5s background-color;
+    }
+    .bgcolor {
+        background-color: hsl(123, 30%,80%);
+        transition: 1s background-color;
+        background-blend-mode: luminosity;
+    }
+    .ftcolor {
+        color: hsl(123, 30%,65%);
+        transition: 1s color;
     }
 </style>
 <body class="bgcolor" id="bg">
