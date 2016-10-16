@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Random Quote Machine</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.gmirror.org/css?family=Tangerine">
+    <link href="https://fonts.gmirror.org/css?family=Sacramento" rel="stylesheet">
 </head>
 <style>
     @font-face {
@@ -85,16 +87,16 @@
         box-sizing: border-box;
         position: absolute;
         width: 61.8%;
-        height: 61.8%;
+        height: 71.8%;
         margin: 6.18% 0;
         left: 50%;
-        top: 6.18%;
+        top: 8.18%;
         transform: translateX(-50%);
         background-color: #fff;
         border-radius: 7px;
     }
     #quote-view:after {
-        content: "by soyaine";
+        content: "";
         font-family: "Lobster", "Monospace", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         display: block;
         position: absolute;
@@ -111,7 +113,7 @@
         /*top: 30%;*/
         transform: translateX(-50%);
         /*font-family: ;*/
-        transition: 1s innerText, 1s color;
+        transition: 1s text, 1s color;
     }
     #quote-content:before, #quote-content:after {
         display: block;
@@ -169,14 +171,39 @@
         color: hsl(123, 30%,65%);
         transition: 1s color;
     }
+    header, footer, footer a{
+        color: #fff;
+        text-align: center;
+    }
+    header {
+        font-size: 2rem;
+        font-family: 'Tangerine', serif;
+    }
+    footer, footer a  {
+        font-size: 1.6rem;
+        font-family: 'Sacramento', serif;
+        text-decoration: none;
+        font-weight: normal;
+    }
+    footer {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: -50px;
+    }
 </style>
 <body class="bgcolor" id="bg">
+<header>
+    Random Poetry Machine
+</header>
 <div id="quote-view">
     <div class="ftcolor" id="quote-content" author="soyaine">点击按钮，邂逅一句诗的意境</div>
     <!--<div class="ftcolor" id="quote-author">Soyaine</div>-->
     <div class="bgcolor hovercolor" id="quote-share" title="分享到微博"><i class="fa fa-weibo"></i></div>
     <div class="bgcolor hovercolor" id="quote-next">邂逅</div>
+    <footer>by <a href="http://soyaine.github.io">Soyaine</a></footer>
 </div>
+
 </body>
 <script src="Random-quote-machine.js"></script>
 </html>
