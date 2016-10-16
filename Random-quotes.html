@@ -32,9 +32,12 @@
         }
         #quote-content {
             writing-mode: vertical-rl;
-            top: 20%;
+            top: 10%;
         }
         #quote-content:after {
+            
+            -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
             bottom: -25px;
             left: -125px;
         }
@@ -57,7 +60,7 @@
         }
     }
     * {
-        font-size: large;
+        font-size: 1rem;
         font-family: "fzqingkebenyuesong", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     }
     body {
@@ -93,7 +96,7 @@
         left: 50%;
         /*top: 30%;*/
         transform: translateX(-50%);
-        font-size: larger;
+        font-size: 2rem;
         /*font-family: ;*/
         transition: 1s innerText;
         transition: 1s color;
@@ -113,7 +116,7 @@
     }
     #quote-content:after {
         content: "- " attr(author);
-        font-size: medium;
+        font-size: .8rem;
         /*left: 100%;*/
         margin-top: 25px;
         width: 100px;
