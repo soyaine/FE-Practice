@@ -42,8 +42,8 @@
             -ms-writing-mode: tb-rl;
             -webkit-writing-mode: vertical-rl;
             writing-mode: vertical-rl;
-            bottom: -25px;
-            left: -125px;
+            bottom: 0;
+            left: -5em;
         }
         #quote-content:before {
             content: "";
@@ -53,7 +53,7 @@
     @media screen and (min-aspect-ratio: 1/1) {
         #quote-content {
             /*writing-mode: vertical-rl;*/
-            top: 30%;
+            top: 2.4em
         }
         #quote-content:after {
             bottom: -25px;
@@ -66,19 +66,28 @@
     /*移动端*/
     @media screen and (max-device-width: 500px) {
         * {
-            font-size: 1.7rem;
+            font-size: 1.6rem;
         }
         #quote-view {
-            height: 71.8%;
+            height: 84.8%;
+        }
+        /*翻译*/
+        #quote-trans {
+            font-size: .5em;
         }
     }
     /*Web端*/
     @media screen and (min-device-width: 500px) {
         * {
+            line-height: 1.618em;
             font-size: 1.4rem;
         }
         #quote-view {
             height: 48.1%;
+        }
+        /*翻译*/
+        #quote-trans {
+            font-size: .78em;
         }
     }
     * {
@@ -88,12 +97,16 @@
         /*position: relative;*/
         /*width: 100%;*/
     }
+
+    #quote-view, #quote-next, #quote-detail {
+        box-shadow: 1px 2px 7px 1.5px #999;
+    }
     #quote-view {
         box-sizing: border-box;
         position: absolute;
         width: 61.8%;
         /*height: 71.8%;*/
-        margin: 6.18% 0;
+        margin: 0 0;
         left: 50%;
         top: 8.18%;
         transform: translateX(-50%);
@@ -112,9 +125,24 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    #quote-view:before {
+        content: "Random Poetry Machine";
+        color: #999;
+        text-shadow: 1px 1px 1px #fff;
+        display: block;
+        position: absolute;
+        width: 120%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -.8em;
+        font-size: 2rem;
+        font-family: 'Tangerine', serif;
+    }
     #quote-content {
         position: absolute;
         left: 50%;
+        width: fit-content;
         /*top: 30%;*/
         transform: translateX(-50%);
         /*font-family: ;*/
@@ -144,29 +172,63 @@
     #quote-author {
 
     }
-    #quote-share, #quote-next {
+    /*翻译*/
+    #quote-trans {
+        /*visibility: hidden;*/
+        font-family: "Hiragino Sans GB", "STHeiti", "Microsoft YaHei";
+        font-weight: lighter;
+        width: 100%;
+        height: 100%;
+        padding: 1em 1.5em 7em 1.5em;
+        box-sizing: border-box;
+        border-radius: 7px;
+        background: #fff;
         position: absolute;
-        bottom: 50px;
+        overflow: auto;
+    }
+    /*body::-webkit-scrollbar-track {*/
+        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    /*}*/
+
+    /*body::-webkit-scrollbar-thumb {*/
+        /*background-color: darkgrey;*/
+        /*outline: 1px solid slategrey;*/
+    /*}*/
+    #quote-trans::-webkit-scrollbar {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    div.hidden {
+        visibility: hidden;
+    }
+
+    /*按钮*/
+    #quote-detail, #quote-next {
+        position: absolute;
+        font-size: .8em;
+        bottom: 1.1em;
         color: #fff;
         border-radius: 5px;
-        padding: 10px 10px;
+        padding: .2em .35em;
         cursor: pointer;
     }
-    #quote-share:hover, #quote-next:hover {
+    #quote-detail:hover, #quote-next:hover {
         cursor: pointer;
     }
     #quote-share {
         font-family: icon;
-        left: 70px;
+    }
+    #quote-detail {
+        left: 2rem;
     }
     #quote-next {
-        right: 70px;
+        right: 2rem;
     }
     header, footer, footer a{
         color: #fff;
         text-align: center;
     }
     header {
+        margin-top: .4em;
         font-size: 2rem;
         font-family: 'Tangerine', serif;
     }
@@ -184,7 +246,7 @@
     }
 </style>
 <style id="colorStyle">
-    #quote-share:hover, #quote-next:hover {
+    #quote-detail:hover, #quote-next:hover {
         background-color: hsl(123, 30%,65%);
         transition: .5s background-color;
     }
@@ -199,13 +261,15 @@
     }
 </style>
 <body class="bgcolor" id="bg">
-<header>
-    Random Poetry Machine
-</header>
+<!--<header>-->
+    <!--Random Poetry Machine-->
+<!--</header>-->
 <div id="quote-view">
     <div class="ftcolor" id="quote-content" author="soyaine">点击按钮，邂逅一句诗的意境</div>
+    <div class="ftcolor hidden" id="quote-trans">诗意的栖居</div>
     <!--<div class="ftcolor" id="quote-author">Soyaine</div>-->
-    <div class="bgcolor hovercolor" id="quote-share" title="分享到微博"><i class="fa fa-weibo"></i></div>
+    <!--<div class="bgcolor hovercolor" id="quote-share" title="分享到微博"><i class="fa fa-weibo"></i></div>-->
+    <div class="bgcolor hovercolor" id="quote-detail" title="查看翻译">诗意</div>
     <div class="bgcolor hovercolor" id="quote-next">邂逅</div>
     <footer>by <a href="http://soyaine.github.io">Soyaine</a></footer>
 </div>
