@@ -1,19 +1,19 @@
 var songs;
 
-function getRandomColor(){
-    var styleEle = document.getElementById("colorStyle");
-    var newColor = Math.floor( (Math.random() * 360) );
-    styleEle.innerHTML = styleEle.innerHTML.replace(/hsl\(\d+/g, "hsl("+ newColor );//直接正则替换 CSS 中的颜色
+function getRandomColor() {
+    var styleEle = document.getElementById("colorStyle"),
+		  newColor = Math.floor((Math.random() * 360));
+    styleEle.innerHTML = styleEle.innerHTML.replace(/hsl\(\d+/g, "hsl(" + newColor);//直接正则替换 CSS 中的颜色
 }
 
-function getRandomQuote(){
+function getRandomQuote() {
     //var songJSON = https://github.com/jackeyGao/chinese-poetry/blob/master/json/poet.song.100000.json;
 }
 
-function getRandomSong(song){
-    if(song){
+function getRandomSong(song) {
+    if (song) {
         var length = song.length;
-        var randomSong = song[Math.floor( (Math.random() * length) )];
+        var randomSong = song[Math.floor((Math.random() * length))];
 
         //// for poertySongs.json
         //if(randomSong.hasOwnProperty("paragraphs")){
@@ -38,7 +38,7 @@ function getRandomSong(song){
         // 窄屏幕将诗句换行
         var viewHeight = quoteContent.offsetParent.clientHeight;
         var viewWidth = quoteContent.offsetParent.clientWidth;
-        if( (viewWidth < 700 && viewWidth/viewHeight > 1) || (viewHeight < 670 && viewWidth/viewHeight < 1) ){
+        if( (viewWidth < 700 && viewWidth/viewHeight > 1) || (viewHeight < 670 && viewWidth / viewHeight < 1) ) {
             randomLine = randomLine.replace(/，/g, "，\n");
         }
         quoteContent.innerText = randomLine;
@@ -52,7 +52,7 @@ function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
     //xobj.open('GET', 'poetSongs.json', true); //繁体诗
-    xobj.open('GET', 'TangPoetryCut.json', true);
+    xobj.open('GET', 'TangPoetry-unicode.json', true);
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText);
@@ -62,25 +62,25 @@ function loadJSON(callback) {
     xobj.send(null);
 }
 
-function loadSongs(){
-    return  loadJSON(function(response){
+function loadSongs() {
+    return  loadJSON(function(response) {
         songs = JSON.parse(response);
         return songs;
     });
 }
 
-function init(){
+function init() {
     //getSong();
     var song = loadSongs();
     getRandomColor();
     getRandomSong(songs);
     var nextBtn = document.getElementById("quote-next");
-    nextBtn.addEventListener('click', function(){
+    nextBtn.addEventListener('click', function () {
         getRandomSong(songs);
         getRandomColor();
     }, false);
     var detailBtn = document.getElementById("quote-detail");
-    detailBtn.addEventListener('click', function(){
+    detailBtn.addEventListener('click', function() {
         var quoteTrans = document.getElementById("quote-trans");
         quoteTrans.classList.toggle("hidden");
     }, false);
