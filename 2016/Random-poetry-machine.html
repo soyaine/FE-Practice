@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>诗意邂逅</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://fonts.gmirror.org/css?family=Tangerine">
-    <link href="https://fonts.gmirror.org/css?family=Sacramento" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<!--	<script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 </head>
 <style>
     @font-face {
@@ -90,9 +91,11 @@
             font-size: .78em;
         }
     }
+/*
     * {
         font-family: "fzqingkebenyuesong", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     }
+*/
     body {
         /*position: relative;*/
         /*width: 100%;*/
@@ -102,6 +105,7 @@
         box-shadow: 1px 2px 7px 1.5px #999;
     }
     #quote-view {
+		font-family: "KaiTi", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         box-sizing: border-box;
         position: absolute;
         width: 61.8%;
@@ -274,6 +278,12 @@
     <footer>by <a href="http://soyaine.github.io">Soyaine</a></footer>
 </div>
 
+<!-- //有字体在线字库
+	<script type="text/javascript">
+  		$youziku.load("#quote-content", "f4ffc08d661248e49eb9099782923cb0", "CTjweibei");
+		$youziku.draw();
+	</script>
+-->
 </body>
 <script src="Random-poetry-machine.js"></script>
 </html>

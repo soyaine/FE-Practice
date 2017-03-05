@@ -52,7 +52,8 @@ function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
     //xobj.open('GET', 'poetSongs.json', true); //繁体诗
-    xobj.open('GET', 'TangPoetry-unicode.json', true);
+//    xobj.open('GET', 'TangPoetryCut.json', true);
+	xobj.open('GET', 'https://gist.githubusercontent.com/soyaine/81399bb2b24ca1bb5313e1985533c640/raw/bdf7df2cbcf70706c4a5e51a7dfb8c933ed78878/TangPoetry.json', true);	 //使用 Gist 数据
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             callback(xobj.responseText);
