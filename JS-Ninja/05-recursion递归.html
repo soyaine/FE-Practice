@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test Suite</title>	
+		<script>
+			function assert(value, desc) {
+				var li = document.createElement("li");
+				li.className = value ? "pass" : "fail";
+				li.appendChild(document.createTextNode(desc));
+				document.getElementById("results").appendChild(li);
+			}
+						
+		</script>
+		
+		<style>
+			#results li.pass {
+				color: limegreen;
+			}
+			#results li.fail {
+				color: #f00;
+/*				text-decoration: line-through;*/
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="results"></ul>
+
+		<script>
+//			【递归】
+//			检测回文
+			function isPalindrome(text) {
+				if(text.length <= 1) return true;
+				if(text.charAt(0) != text.charAt(text.length - 1)) return false;
+				return isPalindrome(text.substr(1, text.length -2 ));
+			}
+			
+			assert(true, "())( is " + isPalindrome("())("));
+			assert(true, "()() is " + isPalindrome("()()"));			
+			
+//			4.2.1 普通命名函数的递归，模拟忍者的鸣叫
+			function chirp(n) {
+				return n > 1 ? chirp(n - 1) + "-chirp" : "chirp";
+			}
+			assert (chirp(3) == "chirp-chirp-chirp", "这个命名函数能被调用啊~符合预期");
+			
+//			4.2.2 方法中的递归，让递归函数作为一个对象的方法 Method
+			var ninja = {
+//				此时创建了一个匿名函数，作为忍者对象的 chirp 的属性值，可能会出现问题
+				chirp: function(n) {
+//					return n > 1 ? ninja.chirp(n-1) + "-chirp" : "chirp";
+//					若将此处的 ninja.chirp 的引用，换成 this 那么，则不会出现失联的状况。
+					return n > 1 ? this.chirp(n-1) + "-chirp" : "chirp";					
+				}
+			};
+			assert(ninja.chirp(4) == "chirp-chirp-chirp-chirp", "对象方法的递归也行");
+			
+//			4.2.3 引用可能出现的丢失问题 沿用上面的声明
+			var samurai = { chirp: ninja.chirp};
+//			此处将 ninja 对象设置为控制，于是 ninja.chirp 这个引用也失效了。
+//			若将此句注释，还是有效果
+			ninja = {};
+			try {
+				assert(samurai.chirp(3) == "chirp-chirp-chirp", "这个可行不？");
+			}
+			catch(e) {
+				assert(false, "好像……不太行");
+			}
+			
+		</script>
+	</body>
+</html>
