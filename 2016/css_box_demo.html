@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复习的Demo</title>
+</head>
+<style>
+    .spot {
+        width: 100px;
+        height: 100px;
+        background-color: #00a1cb;
+    }
+    .box1 {
+        background-color: black;
+        color: white;
+        height: 100px;
+        padding: 10px;
+        border: 20px solid red;
+        margin: 30px;
+    }
+    .box2 {
+        background-color: black;
+        color: white;
+        height: 100px;
+        padding: 10px;
+        border: 20px solid red;
+        margin: 30px;
+        box-sizing: border-box;
+    }
+    .box3 {
+        background: black;
+        color: white;
+        height: 100px;
+        padding: 10px;
+        border: 20px solid red;
+        margin: 30px;
+        /*position: absolute;*/
+    }
+    p {
+        color: blue;
+        text-align: left;
+        font-weight: bold;
+    }
+    p.special {
+        color: red;
+        text-align: right;
+    }
+    p:first-child {
+        color: green;
+    }
+    .box4 {
+        background-color: pink;
+        height: 100px;
+        width: 500px;
+        border: 1px solid #000;
+    }
+    .box5 {
+        background-color: black;
+        color: white;
+        height: 50%;
+        width: 50%;
+        font-weight: 300;
+    }
+    .box6 {
+        background-color: pink;
+        height: 100px;
+        width: 500px;
+        box-shadow: inset 0px 0px 0px 1px black;
+
+    }
+    .box7 {
+        width: 200px;
+        padding: 10px;
+        background-color: #00b3ee;
+        text-align: center;
+    }
+    .box8 {
+        width: 100px;
+        height: 10px;
+        background-color: red;
+        text-decoration: underline;
+    }
+    .box9 {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        background-color: pink;
+        font-style: italic;
+
+    }
+    .a{ font:12px/2 arial; }
+</style>
+<body>
+<p class="a">kjdhfklj</p>
+<div id="animation" class="spot"></div>
+<form>
+    <input type="button" disabled>
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime">
+    <input type="email">
+    <input type="datetime-local">
+    <input type="file" accept="audio/asc">
+    <input type="hidden">
+    <input type="search">
+    <input type="range" min="30" max="300" step="10">
+    <input type="reset">
+</form>
+<select>
+    <option name="1" value="1">1 </option>
+    <option name="2" value="2" selected>2 </option>
+    <option name="2" value="2" selected>31 </option>
+    <option name="2" value="2" disabled>2 </option>
+    <optgroup label="group">
+        <option> djfkl</option>
+        <option disabled>jlkdjf</option>
+        <option>kdfjal</option>
+    </optgroup>
+    <optgroup label="group">
+        <option> djfkl</option>
+        <option disabled>jlkdjf</option>
+        <option>kdfjal</option>
+    </optgroup>
+</select>
+<div class="box1"> 块的宽度 延伸自动填充父元素的宽度区域 </div>
+<div class="box2">多加了一个 box-sizing: border-box</div>
+<div style="position: relative">
+    <div class="box3">没有设置宽度，进行absolute绝对定位，此时宽度会收缩紧贴于内容</div>
+</div>
+
+<div>
+    <p class="special">css层叠</p>
+</div>
+
+<div class="box4">
+    <div class="box5">50% 50%的宽度和高度</div>
+</div>
+<br>
+<div class="box6">
+</div>
+<div class="box7">
+    <div class="box8"></div>
+</div>
+<div class="box9"></div>
+
+<div class="a"><p class="b"></p></div>
+</body>
+<script type="text/javascript" src="task_11_animation.js"></script>
+</html>

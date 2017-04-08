@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>诗意邂逅</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<!--	<script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: 'fzqingkebenyuesong';
+        src: url('fonts/fzqingkebenyuesong.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /*@media screen and (max-device-width: 500px){*/
+    /*#quote-view {*/
+    /*width: 200px;*/
+    /*height: 500px;*/
+    /*}*/
+    /*}*/
+    /*@media screen and (min-device-width: 501px) {*/
+    /*#quote-view {*/
+    /*width: 500px;*/
+    /*height: 200px;*/
+    /*}*/
+    /*}*/
+    /*竖排*/
+    @media screen and (max-aspect-ratio: 1/1) {
+        body {
+            min-width: 320px;
+            min-height: 510px;
+        }
+        #quote-content {
+            -ms-writing-mode: tb-rl;
+            -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            top: 10%;
+        }
+        #quote-content:after {
+            -ms-writing-mode: tb-rl;
+            -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            bottom: 0;
+            left: -5em;
+        }
+        #quote-content:before {
+            content: "";
+        }
+    }
+    /*横排*/
+    @media screen and (min-aspect-ratio: 1/1) {
+        #quote-content {
+            /*writing-mode: vertical-rl;*/
+            top: 2.4em
+        }
+        #quote-content:after {
+            bottom: -25px;
+            left: 100%;
+        }
+        #quote-content:before {
+            content: "“";
+        }
+    }
+    /*移动端*/
+    @media screen and (max-device-width: 500px) {
+        * {
+            font-size: 1.6rem;
+        }
+        #quote-view {
+            height: 84.8%;
+        }
+        /*翻译*/
+        #quote-trans {
+            font-size: .5em;
+        }
+    }
+    /*Web端*/
+    @media screen and (min-device-width: 500px) {
+        * {
+            line-height: 1.618em;
+            font-size: 1.4rem;
+        }
+        #quote-view {
+            height: 48.1%;
+        }
+        /*翻译*/
+        #quote-trans {
+            font-size: .78em;
+        }
+    }
+/*
+    * {
+        font-family: "fzqingkebenyuesong", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+*/
+    body {
+        /*position: relative;*/
+        /*width: 100%;*/
+    }
+
+    #quote-view, #quote-next, #quote-detail {
+        box-shadow: 1px 2px 7px 1.5px #999;
+    }
+    #quote-view {
+		font-family: "KaiTi", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        box-sizing: border-box;
+        position: absolute;
+        width: 61.8%;
+        /*height: 71.8%;*/
+        margin: 0 0;
+        left: 50%;
+        top: 8.18%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        border-radius: 7px;
+    }
+    #quote-view:after {
+        content: "";
+        font-family: "Lobster", "Monospace", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-size: small;
+        font-weight: lighter;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #quote-view:before {
+        content: "Random Poetry Machine";
+        color: #999;
+        text-shadow: 1px 1px 1px #fff;
+        display: block;
+        position: absolute;
+        width: 120%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -.8em;
+        font-size: 2rem;
+        font-family: 'Tangerine', serif;
+    }
+    #quote-content {
+        position: absolute;
+        left: 50%;
+        width: fit-content;
+        /*top: 30%;*/
+        transform: translateX(-50%);
+        /*font-family: ;*/
+        transition: 1s text, 1s color;
+    }
+    #quote-content:before, #quote-content:after {
+        display: block;
+        position: absolute;
+    }
+    /*引号*/
+    #quote-content:before {
+        /*content: "“";*/
+        font-size: 3em;
+        font-weight: bolder;
+        font-family: "Lobster", "Monospace", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        left: -.6em;
+        top: -.15em
+    }
+    /*作者*/
+    #quote-content:after {
+        content: "- " attr(author);
+        font-size: .7em;
+        /*left: 100%;*/
+        margin-top: 25px;
+        width: 100px;
+    }
+    #quote-author {
+
+    }
+    /*翻译*/
+    #quote-trans {
+        /*visibility: hidden;*/
+        font-family: "Hiragino Sans GB", "STHeiti", "Microsoft YaHei";
+        font-weight: lighter;
+        width: 100%;
+        height: 100%;
+        padding: 1em 1.5em 7em 1.5em;
+        box-sizing: border-box;
+        border-radius: 7px;
+        background: #fff;
+        position: absolute;
+        overflow: auto;
+    }
+    /*body::-webkit-scrollbar-track {*/
+        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    /*}*/
+
+    /*body::-webkit-scrollbar-thumb {*/
+        /*background-color: darkgrey;*/
+        /*outline: 1px solid slategrey;*/
+    /*}*/
+    #quote-trans::-webkit-scrollbar {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    div.hidden {
+        visibility: hidden;
+    }
+
+    /*按钮*/
+    #quote-detail, #quote-next {
+        position: absolute;
+        font-size: .8em;
+        bottom: 1.1em;
+        color: #fff;
+        border-radius: 5px;
+        padding: .2em .35em;
+        cursor: pointer;
+    }
+    #quote-detail:hover, #quote-next:hover {
+        cursor: pointer;
+    }
+    #quote-share {
+        font-family: icon;
+    }
+    #quote-detail {
+        left: 2rem;
+    }
+    #quote-next {
+        right: 2rem;
+    }
+    header, footer, footer a{
+        color: #fff;
+        text-align: center;
+    }
+    header {
+        margin-top: .4em;
+        font-size: 2rem;
+        font-family: 'Tangerine', serif;
+    }
+    footer, footer a  {
+        font-size: 1.6rem;
+        font-family: 'Sacramento', serif;
+        text-decoration: none;
+        font-weight: lighter;
+    }
+    footer {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: -3rem;
+    }
+</style>
+<style id="colorStyle">
+    #quote-detail:hover, #quote-next:hover {
+        background-color: hsl(123, 30%,65%);
+        transition: .5s background-color;
+    }
+    .bgcolor {
+        background-color: hsl(123, 30%,80%);
+        transition: 1s background-color;
+        background-blend-mode: luminosity;
+    }
+    .ftcolor {
+        color: hsl(123, 30%,65%);
+        transition: 1s color;
+    }
+</style>
+<body class="bgcolor" id="bg">
+<!--<header>-->
+    <!--Random Poetry Machine-->
+<!--</header>-->
+<div id="quote-view">
+    <div class="ftcolor" id="quote-content" author="soyaine">点击按钮，邂逅一句诗的意境</div>
+    <div class="ftcolor hidden" id="quote-trans">诗意的栖居</div>
+    <!--<div class="ftcolor" id="quote-author">Soyaine</div>-->
+    <!--<div class="bgcolor hovercolor" id="quote-share" title="分享到微博"><i class="fa fa-weibo"></i></div>-->
+    <div class="bgcolor hovercolor" id="quote-detail" title="查看翻译">诗意</div>
+    <div class="bgcolor hovercolor" id="quote-next">邂逅</div>
+    <footer>by <a href="http://soyaine.github.io">Soyaine</a></footer>
+</div>
+
+<!-- //有字体在线字库
+	<script type="text/javascript">
+  		$youziku.load("#quote-content", "f4ffc08d661248e49eb9099782923cb0", "CTjweibei");
+		$youziku.draw();
+	</script>
+-->
+</body>
+<script src="Random-poetry-machine.js"></script>
+</html>
