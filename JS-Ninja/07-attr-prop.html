@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test Suite</title>	
+		<script>
+			function assert(value, desc) {
+				var li = document.createElement("li");
+				li.className = value ? "pass" : "fail";
+				li.appendChild(document.createTextNode(desc));
+				document.getElementById("results").appendChild(li);
+			}
+		</script>
+		
+		<style>
+			#results li.pass {
+				color: limegreen;
+			}
+			#results li.fail {
+				color: #f00;
+/*				text-decoration: line-through;*/
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="results" propid="01"></ul>
+
+		<script>
+//			--其他
+//			attribute 和 property 的区别
+//			attribute 是 HTML 中可以看到的属性（特性节点），如 id name 或者自定义的内容，可以通过 getAttribute 获得
+//			property 可以理解为对象中的属性。
+//			对于 id 这样的属性来说，可以通过两种方式访问，而自定义的属性，只能通过 getAttribute 访问
+			var ele = document.getElementById("results");
+			assert(true, "ele.getAttribute('id') --" + ele.getAttribute('id')); // attribute
+			assert(true, "ele.id -- " + ele.id); // property
+			assert(true, "ele.getAttribute('propid') -- " + ele.getAttribute('propid')); // attribute	
+			assert(true, "ele.propid -- " + ele.propid); // property
+		</script>
+	</body>
+</html>

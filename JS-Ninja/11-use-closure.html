@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>5.2 使用闭包</title>	
+		<script>
+			function assert(id, value, desc) {
+				var li = document.createElement("li");
+				li.className = value ? "pass" : "fail";
+				li.appendChild(document.createTextNode(desc));
+				document.getElementById(id).appendChild(li);
+			}
+		</script>
+		
+		<style>
+			.results li.pass {
+				color: limegreen;
+			}
+			.results li.fail {
+				color: #f00;
+/*				text-decoration: line-through;*/
+			}
+			.box {
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				border-color: #ff0;
+				background: #f78;
+			}
+			#box2 {
+				background: #78f;	
+				width: 60px;
+				height: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="results1" class="results">5.2.1 私有变量</ul>
+		
+		<script>
+//			5.4 使用闭包模拟私有变量
+			function Ninja() {
+				var feints = 0;
+				this.getFeints = function() { // 类似于 getter
+					return feints;
+				};
+				this.feint = function() { // 类似于 setter
+					feints++;
+				};
+//				feints 这个变量被保护起来了，像一个私有变量。
+//				注意它与其他方法的区别在于，
+//				getFeints 和 feint 都是通过 this. 来声明，使其可以在实例的属性中访问到。
+//				而 feints 则是一个变量。
+//				一个存在与这个闭包的气泡中的变量。
+			}
+			
+//			创建新的对象实例时，调用 Ninja() 函数，新的对象成为其上下文
+//			此时，内部的 this 即为 ninja 这个新对象
+			var ninja = new Ninja();
+			
+			ninja.feint();
+			assert("results1", ninja.getFeints() == 1,
+				   "可以直接获取内部的 feints 值");
+			assert("results1", ninja.feints === undefined,
+				   "私有变量是不能访问的");
+		</script>
+		
+		<ul id="results2" class="results">5.2.2 回调和计时器</ul>
+		<button id="testBtn">Ajax</button>
+		<div id="testSubject">或许会显示个什么</div>
+		<div id="box" class="box"></div>
+		<div id="box2" class="box"></div>
+		
+		<script src="../dist/js/vendor/jquery.min.js"></script>
+		<script>
+//			5.5 Ajax 请求的 callback 中使用闭包
+			jQuery('#testBtn').click(function() {
+				var elem$ = jQuery("#testSubject");
+				elem$.html("Loading...");
+				jQuery.ajax({
+					url: "03-call-apply.html",
+					success: function(html) { //闭包
+						assert("results2", elem$,
+							   "这里可以访问 elem$，通过这个回调函数的闭包");
+						elem$.html(html);
+					}
+				});
+				// 运行到上面的回调函数时，调试窗口 Scope 中会显示 Closure，包括 elem$
+				// 出了回调函数，则无
+				var newj = 1;
+			});
+			
+//			5.6 计时器间隔回调中使用 timer interval callback
+			
+			
+			function animateIt(elementId, speed){
+				var elem = document.getElementById(elementId);
+				var tick = 0;
+//				把这些变量放在函数内部，而不是全局变量的好处是：
+//				可以为每次调用都创建不同的闭包，
+//				每个闭包有自己的私有变量，互相之间不干扰不污染
+//				如下面例子中的两个方块
+				
+//				否则，需要为每个动画都创建不同的追踪变量（计时器、计数器、元素索引）
+				
+				var timer = setInterval(function() {
+					if (tick < 300) {
+						elem.style.left = elem.style.top = tick + "px";
+						tick++;
+					} else {
+						clearInterval(timer);
+						assert("results2", 
+							   tick == 300,
+							   "通过闭包访问 Tick 的值");
+						assert("results2", 
+							   elem,
+							   "elem 也能通过闭包访问");
+						assert("results2", 
+							   timer,
+							   "闭包中 timer 的引用也照样是存在的");
+					}
+				}, speed);
+			}
+			animateIt('box', 13);
+			animateIt('box2', 9);
+
+		</script>
+		
+		
+	</body>
+</html>
