@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+	var lineAdd=0;//输入行计数
+//	var inputArr=[5,11,15,9,12,3,4,11,3,9,7]; //输入两行
+//	var inputArr=[12933,111111,59220,69433,59220,111111,0];
+	var inputArr=["3 4","1","2 3","1 1 1"];
+	//模拟输入
+	function read_line(){ 
+	var line=inputArr[lineAdd];
+	lineAdd++;
+	return line;
+	}
+	 //模拟输出
+	function print(x){
+		console.log(x);
+	}
+
+	
+//	
+//	var line;
+//	var arrA = []; 
+//	arrA.len = parseInt(read_line());
+//	var arrB = [];
+//	var result = [];
+//	while(arrA.length < arrA.len){
+//		line = read_line();
+//		arrA.push(parseInt(line));
+//	}
+//	arrB.len = parseInt(read_line());
+//	while(arrB.length < arrB.len){
+//		line = read_line();
+//		arrB.push(parseInt(line));
+//	}
+//	arrB.forEach(function(item){
+//		if(arrA.indexOf(item) != -1){
+//			result.push(item);
+//		}
+//	});
+//	print(result.join(' '));
+	
+	
+	var store = {
+		nextId: 1,
+		cache : {},
+		add: function (fn) {
+	//					添加函数前先判断这个函数是否已经存在过。
+	//					检验方式：初次添加时，给函数的 id 属性添加一个值，此值递增
+	//					今后只需判断此函数是否具有 id 属性即可，
+	//					若无，赋值给 id，同时此 id 值对应了 cache 中的数组索引值
+			if (!fn.id) { 
+				fn.id = store.nextId++; // 为函数创建一个独立的id值，赋值给其 id 属性
+				return !!( store.cache[fn.id] = fn );
+			}
+		}
+	};
+	
+	
+//	// 构建 DAU 对象
+//	// add(uid) 利用 {} 来对数据进行去重处理
+//	var DAU = {
+//		cache : {},
+//		length : 0,
+//		add: function (uid) {
+//			if (!DAU.cache[uid]) {
+//				DAU.cache[uid] = true;
+//				DAU.length++;
+//			}
+//		}
+//	};
+//	// 处理所有输入数据
+//	var line = read_line();
+//	while( line != "0"){
+//		DAU.add(line);
+//		line = read_line();
+//	}
+//	print(DAU.length);
+	
+	var line = read_line().split(' ');
+	var n = parseInt(line[0]);
+	var k = parseInt(line[1]);
+	var tasks = [];
+	var result = {
+		count: 0,
+		weight: 0
+	};
+	while(line = read_line()){
+		line = line.split(' ');
+		tasks.push(line);
+	}
+	n = n-1;
+	while((n >= 1) && (result.count <= k)){
+		var j = n;
+		while(j>=1){
+			var cache = parseInt(tasks[n][j]) + parseInt(tasks[n][j-1]) + parseInt(tasks[n-1][j-1]);
+			if(result.weight < cache){
+				result.weight = cache;
+			}
+			j--;
+		}
+		n--;
+	}
+	print(result.weight);
+	</script>
+</html>

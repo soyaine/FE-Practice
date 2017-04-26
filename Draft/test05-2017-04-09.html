@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+	function print(a){
+		console.log(a);
+	}
+//    var line;
+//    while(line = read_line()){
+//        line = line.split(' ');
+//        print(compare(line[0], line[1]));
+//    }
+	
+//	 var n = readline().trim();
+//	 var line = readline().split(' ');
+// var L = [];
+// for (var i=0; i<n; i++){
+//     arr[i] = parseInt(line[i]);
+// }
+	
+	n = 4;
+	L = [4, 20, 8 ,12];
+	 print(getMax(n, L));
+	
+//	1. 求最大公约数
+function getMax(len, arr) {
+    arr = arr.sort();
+    var result = 0;
+    var max = arr[0];
+    for( max ; max > 0; max--) {
+        var flag = true;
+		for(var i = 0; i < len ; i++){
+			if(arr[i]%max != 0) {
+				flag = false;
+			}
+		}
+        if(flag) {
+            result = max;
+            break;
+        }
+    }
+    return result;
+}
+	
+//	2. 
+//	var n = readline().trim();
+//	var m = readline().trim();
+//	print(countAns(n, m));
+	function countAns(n, m) {
+		var count = 0;
+		var time = m;
+		while(count < n && time < 240){
+			time += (count * 5);
+			count++;
+		}
+		return --count;
+	}
+	print(countAns(4, 210));
+	
+	
+	 var i = 0;
+ while(line = read_line()){
+     var n;
+     if(i%2 !=0) {
+		  n = +read_line();
+		} else {
+         line = line.split(' ');
+         print(getPos(n, line));
+         i++;
+     }
+ }
+	
+	var a = 9;
+	var b = [1, 5, -6, 7, 9, -16, 0, -2, 2];
+	print(getPos(a, b));
+	
+	function getPos(len, arr){
+		var count = 0;
+		for(var index = 0; index < len; index++){
+			var left = arr.slice(0, index);
+			var right = arr.slice(index);
+			if (sum(left) == sum(right)){
+				count++;
+			}
+		}
+		return count;
+	}
+	
+	function sum(arr) {
+		var sum = arr.reduce(function(a, b){
+			return a+b;
+		}, 0);
+		return sum;
+	}
+
+	
+
+
+
+</script>
+</html>

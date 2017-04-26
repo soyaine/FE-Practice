@@ -107,6 +107,8 @@ function getValue(num) {
 
 // var n = readline().trim();
 // var line = readline().split(' ');
+// var n = readline().trim();
+// var line = readline().split(' ');
 // var arr = [];
 // for (var i=0; i<n; i++){
 //     arr[i] = parseInt(line[i]);
