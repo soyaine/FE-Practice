@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    .book-list {
+        width: 300px;
+        font-size: 21px;
+        font-family: "Microsoft YaHei UI";
+        font-weight: bold;
+        vertical-align: 50%;
+    }
+    .book-list li {
+        list-style: none;
+        border-bottom: .5px dashed grey;
+        line-height: 75px;
+    }
+    .book-list li span {
+        cursor: pointer;
+    }
+    .book-top:hover {
+        color: rgb(198, 73, 95);
+    }
+    .book-top label {
+        color: rgb(198, 73, 95);
+    }
+</style>
+<style>
+    .fee-detail{
+        width: 1000px;
+        font-family: "Microsoft YaHei UI";
+    }
+    .fee-title {
+        width: 100px;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .fee-detail table{
+        margin: 0 auto;
+        border-width: 1px 0 0 1px;
+        border-color: rgb(200, 200, 200);
+        border-style: solid;
+        border-collapse: collapse;
+    }
+    .fee-detail table tr:first-child, .title {
+        font-weight: bold;
+        background-color: rgb(247, 247, 247);
+    }
+    .fee-detail td {
+        padding: 20px;
+        border-width: 0 1px 1px 0;
+        border-color: rgb(200, 200, 200);
+        border-style: solid;
+    }
+</style>
+
+<style>
+    .info {
+        font-family: "Microsoft YaHei UI";
+        font-size: 18px;
+    }
+    .info span {
+        line-height: 50px;
+
+    }
+    .info label {
+        font-size: small;
+        margin-left: 10px;
+    }
+    .save {
+        background-color: hotpink;
+        color: white;
+        font-family: "Microsoft YaHei UI";
+        font-size: 20px;
+        line-height: 35px;
+        width: 100px;
+    }
+</style>
+<body>
+    <ul class="book-list">
+        <li>图书畅销榜</li>
+        <li class="book-top" title="当我足够好，才会遇见你"><label>&nbsp;1&nbsp;&nbsp;&nbsp;</label><span>当我足够好，才会遇见你</span></li>
+        <li class="book-top" title="皮囊"><label>&nbsp;2&nbsp;&nbsp;&nbsp;</label><span>皮囊</span></li>
+        <li class="book-top" title="李光耀论中国与世界"><label>&nbsp;3&nbsp;&nbsp;&nbsp;</label><span>李光耀论中国与世界</span></li>
+        <li title="乖，摸摸头"><label>&nbsp;4&nbsp;&nbsp;&nbsp;</label><span>乖，摸摸头</span></li>
+        <li title="男女内参"><label>&nbsp;5&nbsp;&nbsp;&nbsp;</label><span>男女内参</span></li>
+    </ul>
+    <div class="fee-detail">
+        <div class="fee-title">运费详情</div>
+        <table>
+            <tr>
+                <td>区域</td>
+                <td>寄达地</td>
+                <td>首重（元/1000g）</td>
+                <td>续重（元/1000g）</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="title">一区</td>
+                <td>浙江、上海、江苏</td>
+                <td>6</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>江西、安徽</td>
+                <td>7</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="title">二区</td>
+                <td>吉林、黑龙江、云南</td>
+                <td>10</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td class="title">三区</td>
+                <td>新疆、西藏</td>
+                <td>15</td>
+                <td>10</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="info">
+        <span>头像&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file"></span><br>
+        <span>昵称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></span><br>
+        <span>学历&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select>
+                <option selected>大专</option>
+                <option>本科</option>
+            </select>
+        </span><br>
+        <span>性别&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input type="radio" value="男" name="gender" checked>男</label>
+            <label><input type="radio" value="女" name="gender">女</label>
+        </span><br>
+        <span>爱好&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input type="checkbox" value="movie" name="hobby" checked>电影</label>
+            <label><input type="checkbox" value="graph" name="hobby">摄影</label>
+            <label><input type="checkbox" value="music" name="hobby">音乐</label>
+            <label><input type="checkbox" value="read" name="hobby" checked>阅读</label>
+        </span><br>
+        <span>签名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea></textarea>
+        </span><br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input type="button" value="保存" class="save"></label>
+        </span>
+    </div>
+<style>
+    .parent {
+        width: 810px;
+        height: 400px;
+        background-color: #d3d3d3;
+        /*position: absolute;*/
+        left: 50%;
+        transform: translateX(-50%);
+        clear: both;
+        content: "";
+    }
+    .side {
+        width: 200px;
+        height: 100%;
+        background-color: palevioletred;
+        float: left;
+        margin-right: 10px;
+    }
+    .main {
+        width: 600px;
+        height: 100%;
+        background-color: cadetblue;
+        float: right;
+    }
+</style>
+    <div class="parent">
+        <div class="side">侧栏</div>
+        <div class="main">主栏</div>
+    </div>
+
+<style>
+    .news-title {
+        width: 200px;
+        font-family: 宋体;
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+        line-height: 25px;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+</style>
+    <span class="news-title">
+        标题文字标题文字标题文fdzi jdkjsdlfkjfffdfd df fdflskdjf
+    </span>
+
+<style>
+    .slide {
+        width: 200px;
+        height: 100px;
+        background-color: #bce8f1;
+        position: relative;
+    }
+    .pointer {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+    i {
+        width: 10px;
+        height: 10px;
+        border-radius: 50% 50%;
+        background-color: #000;
+        content: ".";
+        float: left;
+        margin-left: 5px;
+    }
+    .current {
+        background-color: #fff;
+        background-repeat: no-repeat;
+    }
+</style>
+
+    <div class="slide">
+        <!-- 图片省略 -->
+        <!-- 以下是指示器 -->
+        <div class="pointer"><i class="current"></i><i></i><i></i></div>
+    </div>
+
+<style>
+    .news {
+        position: relative;
+    }
+    .news-img {
+        width: 100px;
+        height: 100px;
+        margin-right: 15px;
+        float: left;
+    }
+    .news-content {
+        height: 100px;
+        /*此处设定右文宽度为 250px，以展示标题超出时的效果*/
+        width: 250px;
+        font-family: 宋体;
+        line-height: 25px;
+        overflow: hidden;
+    }
+    .news-content h1 {
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0;
+        color: #000;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .news-content p {
+        font-size: 14px;
+        margin: 0;
+        color: #666;
+    }
+</style>
+    <div class="news">
+        <img src="http://163.com/x.jpg" class="news-img">
+        <div class="news-content">
+            <h1>标题文字标题文字标题文字标题文字</h1>
+            <p>段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字</p>
+        </div>
+    </div>
+<style>
+    .login {
+
+    }
+    .login h1 {
+        font-size: 14px;
+        font-family: "Microsoft YaHei UI";
+        font-weight: bold;
+        line-height: 16px;
+        /*使用 table 的 border-spacing: 0 15px; 已使其距离第一个输入框15px；*/
+        /*margin-bottom: 15px;*/
+        margin: 0;
+    }
+    .login table {
+        vertical-align: 50%;
+        border-spacing: 0 15px;
+    }
+    .login td:first-child {
+        width: 60px;
+        font-size: 12px;
+    }
+    .login input {
+        width: 200px;
+        height: 20px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+    .login button {
+        width: 40px;
+        height: 20px;
+        border: 0;
+        background-color: rgb(84, 174, 222);
+        color: #fff;
+        font-family: 宋体;
+        font-size: 12px;
+        text-align: center;
+        vertical-align: 50%;
+    }
+</style>
+    <div>
+        <form class="login" action="/login">
+            <h1>登录网易通行证</h1>
+            <table>
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">登录</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div>
+        <h1>照片冲印价格详情</h1>
+        <table border="1">
+            <tr>
+                <td rowspan="2">相片尺寸</td>
+                <td colspan="2">相纸（元/张）</td>
+            </tr>
+            <tr>
+                <td>富士</td>
+                <td>柯达</td>
+            </tr>
+            <tr>
+                <td>6寸</td>
+                <td>0.45</td>
+                <td>0.6</td>
+            </tr>
+            <tr>
+                <td>10寸</td>
+                <td>3.89</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td colspan="3">运单8元/单，满99免运费</td>
+            </tr>
+        </table>
+    </div>
+<style>
+    .this {
+        font: 12px 宋体;
+        color: #000;
+    }
+    .btn {
+        width: 50px;
+        height: 28px;
+        border: 1px solid #ddd;
+        background-color: #eee;
+        margin-bottom: 1px;
+    }
+    .select {
+        border: 1px solid #ddd;
+        height: 30px;
+        background-color: #fff;
+    }
+    .select option {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /*以下两种方法都只适用于 Firefox*/
+    /*参考资料：*/
+    /*http://stackoverflow.com/questions/10484053/change-select-list-option-background-colour-on-hover*/
+    select.select option:checked {
+        -webkit-box-shadow: 0 0 10px 10px #ddd inset;
+        -moz-box-shadow: 0 0 10px 10px #ddd inset;
+        box-shadow: 0 0 10px 10px #ddd inset;
+    }
+    .select:focus > option:checked{
+        background-color: #ddd !important;
+    }
+    .select:focus > option:hover{
+        box-shadow: 0 0 10px 10px #ddd inset;
+    }
+</style>
+    <div class="this">
+        <button class="btn">按钮</button><br>
+        <select class="select">
+            <option>下拉菜单项</option>
+            <option>下拉菜单项</option>
+            <option>下拉菜单项</option>
+            <option>下拉菜单项</option>
+        </select>
+    </div>
+<style>
+    .this {
+        font: 12px 宋体;
+        color: #000;
+    }
+    .btn {
+        width: 50px;
+        height: 28px;
+        border: 1px solid #ddd;
+        background-color: #eee;
+        margin-bottom: 1px;
+    }
+    .list {
+        margin: 0;
+        padding: 0;
+    }
+    .list li {
+        list-style-type: none;
+        border: 1px solid #ddd;
+        height: 30px;
+        width: 60px;
+        line-height: 30px;
+        background-color: #fff;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .list li:hover {
+        background-color: #ddd;
+    }
+</style>
+    <div class="this">
+        <button class="btn">按钮</button><br>
+        <ul class="list">
+            <li>下拉菜单项</li>
+            <li>下拉菜单项</li>
+            <li>下拉菜单项</li>
+            <li>下拉菜单项</li>
+        </ul>
+    </div>
+</body>
+</html>

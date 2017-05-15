@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript基础</title>
+</head>
+<body>
+<div style="visibility: hidden; position: absolute;">
+    任务十五
+    <ul>
+        <li>
+            任务说明：
+            <ul>
+                <li>任务描述：</li>
+                <ol>
+                    <li> √ 参考以下示例代码，读取页面上已有的source列表，从中提取出城市以及对应的空气质量</li>
+                    <li> √ 将数据按照某种顺序排序后，在resort列表中按照顺序显示出来</li>
+                </ol>
+                <li>任务注意事项：</li>
+                <ol>
+                    <li> 请注意代码风格的整齐、优雅 </li>
+                    <li> 代码中含有必要的注释</li>
+                </ol>
+                <li>任务目的：</li>
+                <ol>
+                    <li> JavaScript中的高级选择器</li>
+                    <li> 学习JavaScript中的数组对象遍历、读写、排序等操作</li>
+                    <li> 学习简单的字符串处理操作</li>
+                </ol>
+            </ul>
+        </li>
+        <li>验收标准：笔记记录, 效果实现</li>
+        <li>完成验收：笔记 ，设计稿效果达成——在上面任务注意事项里面打钩</li>
+    </ul>
+</div>
+<ul id="source">
+    <li>北京空气质量：<b>90</b></li>
+    <li>上海空气质量：<b>70</b></li>
+    <li>天津空气质量：<b>80</b></li>
+    <li>广州空气质量：<b>50</b></li>
+    <li>深圳空气质量：<b>40</b></li>
+    <li>福州空气质量：<b>32</b></li>
+    <li>成都空气质量：<b>90</b></li>
+</ul>
+
+<ul id="resort">
+    <!--
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
+    <li>第三名：北京空气质量：<b>90</b></li>
+     -->
+</ul>
+
+<button id="sort-btn">排序</button>
+
+<script type="text/javascript">
+
+    /**
+     * getData方法
+     * 读取id为source的列表，获取其中城市名字及城市对应的空气质量
+     * 返回一个数组，格式见函数中示例
+     */
+    function getData() {
+        // 获取source
+        var source = document.getElementById("source");
+        // 获取其中的li元素
+        var dataSource = source.getElementsByTagName("li");
+        var data = new Array();
+        // 遍历li元素，获取数据
+        for(i = 0; i < dataSource.length; i++){
+            // 获取每项li内部文本
+            var dataString = dataSource[i].innerText;
+            // 获取城市名
+            var dataCity = dataString.slice(0, 2);
+            // 获取空气质量指数数值
+            var dataNum = dataString.slice(7);
+            // 构造数组
+            var dateAir = [dataCity, dataNum];
+            // 将单项数组存入data中，结果形式为二维数组
+            data.push(dateAir);
+        }
+        //alert(data.toString);
+
+        /*
+         data = [
+         ["北京", 90],
+         ["北京", 90]
+         ……
+         ]
+         */
+
+        return data;
+
+    }
+
+    /**
+     * sortAqiData
+     * 按空气质量对data进行从小到大的排序
+     * 返回一个排序后的数组
+     */
+    function sortAqiData(data) {
+        // 定义 sort 函数的参数，用于设定比较规则
+        var sortData = data.sort( function(x, y){
+            // 读取数组的每项数据的第二位，即空气质量的数值，
+            // 运用减号使返回值为负数、正数、零
+            // 按照从大到小的顺序排列
+            return y[1] - x[1];
+        });
+        return sortData;
+    }
+
+    /**
+     * render
+     * 将排好序的城市及空气质量指数，输出显示到id位resort的列表中
+     * 格式见ul中的注释的部分
+     */
+    function render(data) {
+        var resortNode = document.getElementById("resort");
+        // 遍历数组
+        for(var i = 0; i < data.length; i++){
+            // 构造需要输出显示的 HTML 字符串
+            var aqiString = "第" + (i+1).toString() + "名：" +  data[i][0] + "空气质量：<b>" + data[i][1] + "</b>";
+            // 创建新的 li 节点
+            var aqiNode = document.createElement("li");
+            // 传入需输出的内容
+            aqiNode.innerHTML = aqiString;
+            // 将节点添加到文档
+            resortNode.appendChild(aqiNode);
+        }
+    }
+
+    function btnHandle() {
+        var aqiData = getData();
+        aqiData = sortAqiData(aqiData);
+        render(aqiData);
+    }
+
+    function init() {
+
+        var sortBtn = document.getElementById("sort-btn");
+        sortBtn.onclick = function(){  //运用DOM0级事件处理程序
+            btnHandle();
+        // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
+        };
+    }
+
+    init();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test Suite</title>	
+		<script>
+			function assert(value, desc) {
+				var li = document.createElement("li");
+				li.className = value ? "pass" : "fail";
+				li.appendChild(document.createTextNode(desc));
+				document.getElementById("results").appendChild(li);
+			}
+			
+			window.onload = function() {
+//				assert(true, "This test suite is running");
+//				assert(false, "fail!");
+			}
+		</script>
+		
+		<style>
+			#results li.pass {
+				color: limegreen;
+			}
+			#results li.fail {
+				color: #f00;
+/*				text-decoration: line-through;*/
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="results"></ul>
+
+		<script>
+//			构造器
+			function Ninja() {
+				this.skulk = function() { return this; };
+			}
+			
+			var ninja1 = new Ninja();
+			var ninja2 = new Ninja();
+			
+			assert(ninja1.skulk() === ninja1, "The 1st ninja ins skulking");
+			assert(ninja2.skulk() === ninja2, "The 1st ninja ins skulking");			
+		</script>
+	</body>
+</html>

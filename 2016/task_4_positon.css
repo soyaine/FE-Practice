@@ -1,0 +1,42 @@
+
+.backflex {
+    height: 90%;
+    width: 50%;
+    background-color: #eeeeee;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back {
+
+}
+.center {
+    height: 200px;
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.sector1, .sector2 {
+    background-color: #fc0;
+    height: 50px;
+    width: 50px;
+}
+.sector1 {
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sector2 {
+    border-top-left-radius: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

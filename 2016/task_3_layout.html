@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task_3 Layout</title>
+    <link rel="stylesheet" href="task_3_layout.css">
+</head>
+<body>
+    <header>
+        任务三
+        <ul>
+            <li>
+                任务说明：
+                <ul>
+                    <li>任务描述：</li>
+                    <ol>
+                        <li>左右两栏宽度固定</li>
+                        <li>中间一栏根据父元素宽度填充满，最外面的框应理解为浏览器。</li>
+                        <li>背景色为 #eee 区域的高度取决于三个子元素中最高的高度</li>
+                    </ol>
+                    <li>任务注意事项：</li>
+                    <ol>
+                        <li>尝试 position 和 float 的效果，思考它们的异同和应用场景。</li>
+                        <li>注意测试不同情况，尤其是极端情况下的效果</li>
+                        <li>调节浏览器宽度，固定宽度和自适应宽度的效果始终符合预期。</li>
+                        <li>改变中间一栏的内容长度，以确保在中间一栏较高和右边一栏较高时，父元素的高度始终为子元素中最高的高度。</li>
+                    </ol>
+                </ul>
+            </li>
+            <li>任务目标：掌握HTML/CSS布局的概念，掌握盒模型的概念，掌握position与float的概念以及在布局时的用法</li>
+            <li>验收标准：笔记记录：学习过程、position 和 float 异同思考，完成设计稿效果的页面</li>
+            <li>完成验收：笔记√ ，设计稿效果达成√极端情况下也符合√ </li>
+        </ul>
+    </header>
+    <div class="back">
+        <div class="logo">
+            <img src="pic/head10.jpg" class="pic">
+            <p>团队名称</p>
+        </div>
+        <div class="content">
+            <p>《伤心者》是一篇很短的科幻，放在《伤心者》这本书的第一篇。讲的是一个数学系硕士何夕花了很多年时间在当时那个时代没有人能理解的理论上，最后疯了。当然精髓不在于此，故事是以后来人的角度去看、去描述的， 150 年后的诺贝尔获奖者在台上讲述这个故事，包含科研的辛酸苦楚。</p>
+            <p>故事让我联想到王一生的妈妈为他磨的那副棋，何夕的妈妈从来都坚信自己的孩子是最棒的，在这一点上她又何尝不是另一个何夕，以至于她在儿子出书之后欣喜若狂，甚至被当做疯子也要把书硬塞到各个图书馆，只为不让孩子失落，也是由此才留下了对 150 年后的人珍贵无比的资料。</p>
+            <p>百年之后世人感激她出自母爱的举动，二十年未开口说话的何夕却在母亲离世之后喃喃「妈妈」二字，这番亲子相依，在理论的世界里也足以让人动容。</p>
+            <p>注：当宽度小于 620 时，此部分开始被覆盖</p>
+        </div>
+        <div class="sidebar">
+            <img src="pic/head1.jpg" class="pic">
+            <img src="pic/head2.jpg" class="pic">
+            <img src="pic/head4.jpg" class="pic">
+            <img src="pic/head5.jpg" class="pic">
+        </div>
+    </div>
+    <div class="back-">
+        <div class="logo-">
+            <img src="pic/head10.jpg" class="pic"><label>团队名称</label>
+        </div>
+        <div class="content-">
+            <p>《伤心者》是一篇很短的科幻，放在《伤心者》这本书的第一篇。讲的是一个数学系硕士何夕花了很多年时间在当时那个时代没有人能理解的理论上，最后疯了。当然精髓不在于此，故事是以后来人的角度去看、去描述的， 150 年后的诺贝尔获奖者在台上讲述这个故事，包含科研的辛酸苦楚。</p>
+            <p>故事让我联想到王一生的妈妈为他磨的那副棋，何夕的妈妈从来都坚信自己的孩子是最棒的，在这一点上她又何尝不是另一个何夕，以至于她在儿子出书之后欣喜若狂，甚至被当做疯子也要把书硬塞到各个图书馆，只为不让孩子失落，也是由此才留下了对 150 年后的人珍贵无比的资料。</p>
+            <p>百年之后世人感激她出自母爱的举动，二十年未开口说话的何夕却在母亲离世之后喃喃「妈妈」二字，这番亲子相依，在理论的世界里也足以让人动容。</p>
+        </div>
+        <div class="sidebar-">
+            <img src="pic/head1.jpg" class="pic">
+            <img src="pic/head2.jpg" class="pic">
+            <img src="pic/head4.jpg" class="pic">
+            <img src="pic/head5.jpg" class="pic">
+        </div>
+    </div>
+</body>
+</html>
